@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List of Games</title>
+</head>
+<body>
+	<h1>List of Games</h1>
+
+	<table>
+		<tr>
+			<th>Game Name</th>
+			<th>Game Type</th>
+			<th>Rating</th>
+		</tr>
+		<?php
+		require(" welcome.php ");
+		?>
+	</table>
+
+	<br>
+
+	<form action="add_game.php" method="post">
+		<label for="game_name">Game Name:</label>
+		<input type="text" id="game_name" name="game_name"><br>
+
+		<label for="game_type">Game Type:</label>
+		<input type="text" id="game_type" name="game_type"><br>
+
+		<label for="game_rating">Rating:</label>
+		<input type="text" id="game_rating" name="game_rating"><br>
+
+		<input type="submit" value="Add Game">
+	</form>
+
+	<br>
+
+	<form action="delete_game.php" method="post">
+		<label for="game_name_delete">Game Name:</label>
+		<input type="text" id="game_name_delete" name="game_name_delete"><br>
+
+		<input type="submit" value="Delete Game">
+	</form>
+</body>
+</html>

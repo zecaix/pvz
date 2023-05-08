@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="loading.css" />
+<body>
+  <div class="background-container">
+    <a id="fill" href="index.html" target="_blank" rel="noopener">
+    </a>
+    <style>
+      /* BACKGROUND LINK */
+a#fill {
+position: fixed;
+top: 7%;
+left: 0;
+height: 100vh;
+width: 100vw;
+text-align: center;
+padding-top: 45vh;
+transition: .2s background-color, .2s color;
+}
+    </style>
+  </div> 
+    <svg class="loader" width="76px" height="16px" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle cx="10" cy="10" r="5" stroke="#FFFFFF" stroke-width="2" fill="#1985D3" opacity="0">
+            <animate id="Circle1" attributeName="opacity" from="0" to="1" dur=".3s" begin=".3s; Circle4.end" fill="freeze"/>
+            <animate attributeName="opacity" from="1" to="0" dur=".3s" begin="Circle4.end" />
+          </circle>
+          <circle cx="30" cy="10" r="5" stroke="#FFFFFF" stroke-width="2" fill="#F75562" opacity="0">
+            <animate id="Circle2" attributeName="opacity" from="0" to="1" dur=".3s" begin="Circle1.end" fill="freeze" />
+            <animate attributeName="opacity" from="1" to="0" dur=".3s" begin="Circle4.end" />
+          </circle>
+          <circle cx="50" cy="10" r="5" stroke="#FFFFFF" stroke-width="2" fill="#6FBC46" opacity="0">
+            <animate id="Circle3" attributeName="opacity" from="0" to="1" dur=".3s" begin="Circle2.end" fill="freeze" />
+            <animate attributeName="opacity" from="1" to="0" dur=".3s" begin="Circle4.end" />
+          </circle>
+          <circle cx="70" cy="10" r="5" stroke="#FFFFFF" stroke-width="2" fill="#FBE300" opacity="0">
+            <animate id="Circle4" attributeName="opacity" from="0" to="1" dur=".3s" begin="Circle3.end" fill="freeze" />
+            <animate attributeName="opacity" from="1" to="0" dur=".3s" begin="Circle4.end" />
+          </circle>
+        </g>
+      </svg>
+</body>
+    
+</html>
